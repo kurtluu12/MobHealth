@@ -1,1 +1,25 @@
-In this code, initially, all the variables are declare
+Initially, all the variables are declared and some are assigned to values such as: 0, 1, a1.
+
+The first if statement checks whether or not a1 > 0, since a1 is either 64, 128, or 256,
+this statement will always pass. 
+
+Next, there is a nested do-while loop. The first do-while loop first assigns v11 = a2[v6];
+v6 is 0 at this point so v11's value is a2[0]. v6 is then incremented.
+v12 = a2[v6] which is essentially, v12 = a2[1]. 
+
+Before the next do-while loop, there is an if statement that checks whether of not 
+v9 * (v11 - v12) < a3 (I added a variable t1 = v9 * (v11 - v12) for better readability).
+
+*** SKIP IF t1 NOT < a3 ***
+In the second do-while loop, there is another if statement that checks v9 * 12 > v9 * 13
+(Again, I added variables t2, t3 for clarity). If so, then v11 = v12. Then add 4 to v12. 
+Increment v6. The while checks v9 * (v11 - v12) < a3 (t4 for clarity). After, the loop, 
+a1 is assigned to v5.
+***      END SKIP      ***
+
+Then v9 = -v9. a2a is incremented. o1 = a2a + 1.
+
+The while exits if v6 NOT < v5. 
+
+After the nested loops, there is an if statement to see if o1 is odd. If so, it will 
+decrement it. Finally, the function will return the value of o1.
