@@ -1,11 +1,20 @@
-Initially, all the variables are declared and some are assigned to values such as: 0, 1, a1.
+1)  Many of the variables were reassigned so I deleted them e.g. *v10 = v11 (just use v11). 
+Some variables did not affect the outcome of the return value, o1 e.g. v4. To make the 
+code more readable, I separated some arithmetic into more lines, assigning them to new 
+values that I made: t1, t2, t3, t4. Also, since   *(int *) &x == x   I deleted all the 
+*(int *)s and &s.
+
+
+2) To verify that my code is correct, I would use the unit testing strategy.
+
+
+3)  Initially, all the variables are declared and some are assigned to values such as: 0, 1, a1.
 
 The first if statement checks whether or not a1 > 0, since a1 is either 64, 128, or 256,
 this statement will always pass. 
 
 Next, there is a nested do-while loop. The first do-while loop first assigns v11 = a2[v6];
-v6 is 0 at this point so v11's value is a2[0]. v6 is then incremented.
-v12 = a2[v6] which is essentially, v12 = a2[1]. 
+v6 is then incremented. Then v12 = a2[v6].
 
 Before the next do-while loop, there is an if statement that checks whether of not 
 v9 * (v11 - v12) < a3 (I added a variable t1 = v9 * (v11 - v12) for better readability).
@@ -22,4 +31,6 @@ Then v9 = -v9. a2a is incremented. o1 = a2a + 1.
 The while exits if v6 NOT < v5. 
 
 After the nested loops, there is an if statement to see if o1 is odd. If so, it will 
-decrement it. Finally, the function will return the value of o1.
+decrement it and return it.
+
+
